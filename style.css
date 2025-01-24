@@ -1,508 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap');
-
-html {
-    scroll-behavior: smooth;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    margin-bottom: 0;
-
-}
-
-.header img {
-    width: 500px;
-    height: auto;
-
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
 }
 
 .Homenav {
-    width: 100%;
-    padding: 0;
-    background-color: #D7B5B3;
-    margin-top: 0;
-}
-
-.Homenav ul {
     display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #D7B5B3;
+    padding: 30px 40px;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 100px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
-}
-
-.Homenav li {
-    margin: 0;
+    align-self: center;
     flex: 1;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+
 }
 
-.Homenav a {
-    font-size: large;
-    line-height: 2.5;
-    display: block;
-    color: aliceblue;
+.nav-links li a {
     text-decoration: none;
-    padding: 10px 0;
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font: weight 400px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+
 }
 
-.Homenav a:hover {
-    background-color: #EA9999;
-    color: #ffffff;
+.nav-links li a:hover {
+    color: #EA9999;
 }
+
 
 .dropdown {
     position: relative;
-    display: inline-block;
-    width: 100%;
-}
 
-.dropbtn {
-    font-size: large;
-    color: aliceblue;
-    text-decoration: none;
-    padding: 10px 15px;
-    width: 100%;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: aliceblue;
-    left: 0;
-    right: 0;
-    box-shadow: 0 8px 16px rgba(237, 153, 153, 0.2);
-    width: 100%;
+    top: 100%;
+    background-color: #E9B9B7;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    min-width: 200px;
+
 }
 
 .dropdown-content a {
-    color: #D7B5B3;
-    padding: 10px 16px;
+    color: #EA9999;
+    padding: 15px 20px;
     text-decoration: none;
     display: block;
-    font-size: medium;
+    font-size: 20px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: aliceblue;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown-content a:hover {
-    background-color: #EA9999;
-    color: white;
-}
 
-.body {
-    background-color: cornsilk;
-}
-
-h2 {
-    font-size: xx-large;
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: 10;
-    text-align: right;
-    padding-top: 50px;
-    color: dimgrey;
-}
-
-h2 {
-    font-size: 2rem;
-    font-family: "Quicksand", serif;
-    font-weight: bold;
-    color: dimgrey;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.intro {
-    font-family: "Quicksand", serif;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    max-width: 95%;
-    text-align: center;
-    margin: 0 auto 40px;
-    padding-bottom: 30px;
-}
-
-.Washington {
-    display: flex;
-    align-items: center;
-    background-color: #fff2f7;
-    padding: 20px;
-    margin: 40px auto;
-    max-width: 2000px;
-    border-radius: 30px;
-    box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1);
-}
-
-.Subtitle {
-    color: #EA9999;
-    margin-top: 70px;
-    margin-bottom: 80px;
-}
-
-.Washington img {
-    width: 500px;
-
-    height: 600px;
-
-    margin-right: 50px;
-
-    border-radius: 50% 10%;
-
-    margin-left: 50px;
-    box-shadow: 0 20px 40px rgb(255, 255, 255);
-}
-
-.Article p {
-    font-family: "Quicksand", serif;
-    ;
-    font-size: 20px;
-    line-height: 1.4;
-    max-width: 800px;
-    text-align: justify;
-}
-
-.Wuhan {
-    display: flex;
-    justify-content: center;
-    margin: 40px auto;
-    max-width: 2000px;
-    padding: 20px;
-    background-color: #ffe2e1;
-    border-radius: 30px;
-    box-shadow: 0 40px 50px rgba(251, 100, 100, 0.1);
-}
-
-
-
-.Subtitle2 {
-    color: #D9534F;
-    margin-bottom: 50px;
-}
-
-.Article2 p {
-    font-family: "Quicksand", serif;
-    ;
-    font-size: 20px;
-    line-height: 1.4;
-    max-width: 700px;
-    margin-left: 4%;
-    margin-bottom: 10%;
-    text-align: justify;
-}
-
-.Wuhan img{
-    width: 500px;
-    height: 300px;
-    border-radius: 50px;
-    box-shadow: 0 20px 40px rgb(255, 255, 255);
-    margin-right: 5%;
-    margin-top: 200px;
-}
-
-.Tokyo {
-    display: flex;
-    align-items: center;
-    background-color: #fff2f7;
-    padding: 20px;
-    margin: 40px auto;
-    max-width: 2000px;
-    border-radius: 30px;
-    box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1);
-}
-
-.Subtitle3 {
-    color: #EA9999;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-.Tokyo img {
-    width: 500px;
-
-    height: 450px;
-
-    margin-right: 50px;
-
-    border-radius: 50%;
-
-    margin-left: 50px;
-
-    margin-top: 50px;
-    box-shadow: 0 20px 40px rgb(255, 255, 255);
-}
-
-.Article3 p {
-    font-family: "Quicksand", serif;
-    font-size: 20px;
-    line-height: 1.4;
-    max-width: 800px;
-    text-align: justify;
-    margin-bottom: 10%;
-}
-
-.Notice {
-    display: block;
-    text-align: center;
-    padding: 2%;
-    color: #EA9999;
-}
-
-.image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-top: 30px;
-    max-width: 2000px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
-.image :hover {
-    transform: scale(1.05);
-    opacity: 0.8;
-
-}
-
-
-.image-link {
-    text-align: center;
-    width: 30%;
-    text-decoration: none;
-    color: inherit;
-}
-
-.image-link img {
-    width: 100%;
-    height: auto;
-    border-radius: 10%;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.image-caption {
-    font-family: "Quicksand", serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-    margin: 0;
-    padding: 0;
-}
-
-.About {
-    background-color: #fff2f7;
-    padding: 10px;
-    margin: 40px auto;
-    max-width: 1130px;
-    border-radius: 50px;
-
-}
-
-.About h2 {
-
-    color: #EA9999;
-}
-
-.About p {
-    color: #EA9999;
-    font-family: "Quicksand", serif;
-    font-size: 20px;
-    line-height: 1.4;
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 5%;
-}
-
-.review {
-    display: block;
-    max-width: 300px;
-    height: auto;
-    margin: 10px auto 0;
-}
-
-footer {
-    background-color: #D7B5B3;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-.footer-content {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.footer-content h3 {
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
     font-size: 24px;
-    margin-bottom: 30px;
-    font-weight: bold;
+    color: #fff;
 }
 
-.footer-content i {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    margin-left: 20px;
-    margin-right: 10px;
-}
 
-.footer-content p {
-    font-size: 16px;
-    display: inline-block;
-    margin: 10px 0;
-    color: #ffffff;
-}
-
-@media (max-width: 540px) {
-    .header img {
-        width: 80%;
-    }
-
-    .Homenav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .Homenav a {
-        font-size: 1rem;
-    }
-
-    .Washington,
-    .Wuhan,
-    .Tokyo {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .Washington img,
-    .Wuhan img,
-    .Tokyo img {
-        width: 100%;
+@media (max-width: 768px) {
+    .logo img {
+        width: 150px;
         height: auto;
-        margin: 0 auto 20px;
+        margin-top: 10px;
     }
 
-    .Article p,
-    .Article2 p,
-    .Article3 p {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .image {
+    .Homenav {
         display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding-top: 15px;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
 
-    .image-link {
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #D7B5B3;
         width: 100%;
-    }
-
-    .image-link img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    .image-link img:hover {
-        transform: scale(1.05);
-        opacity: 0.8;
-    }
-
-    .footer-content {
         padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+    }
+
+    .nav-links li a {
+        font-size: 18px;
+
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .header img {
-        width: 60%;
-    }
-
-    .Homenav ul {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .Washington,
-    .Wuhan,
-    .Tokyo {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .Washington img,
-    .Tokyo img {
-        width: 50%;
-    }
-
-    .Wuhan img{
-        margin-left: 500px;
-    }
-
-
-    .Article p,
-    .Article2 p,
-    .Article3 p {
-        max-width: 90%;
-        margin: 0 auto;
-
-    }
-
-    .image-link {
-        width: 45%;
-    }
-
-    .image-link img:hover {
-        transform: scale(1.05);
-        opacity: 0.8;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-}
-
-@media (min-width: 1020px) and (max-width: 1024px) {
-    .header img {
-        width: 60%;
-    }
-
-    .Washington img,
-    .Wuhan img,
-    .Tokyo img {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .Article p,
-    .Article2 p,
-    .Article3 p {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-
-    .image-link img:hover {
-        transform: scale(1.05);
-        opacity: 0.8;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-}
